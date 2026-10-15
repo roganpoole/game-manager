@@ -2,29 +2,45 @@
 <html>
     <head>
         <title>Game Manager</title>
+        <link rel="stylesheet" href="style.css">
+        
     </head>
+    
     <body>
         <header>
-            <h1>Game Manager</h1>
+            <h1 class="title">Game Manager</h1>
             <p>Welcome to the Game Manager! Here you can manage your games, view statistics, and customize your gaming experience.</p>
-        </header>    
-    <main>
-        <h2> Game Library</h2>
+        </header>
+        
+        <main>
+          <div class="search-section">
+        <input type="text" id="searchInput" placeholder="Cari game favoritmu...">
+        <button id="searchButton">Cari</button>
+    </div>
+    <div id ="searchResult"></div>       
+            <h2 class="title"> Game Library</h2>
 
-        <ul>
-            <li>Roblox</li>
-            <li>Fortnite</li>
-            <li>Raft</li>
-            <li>Subnautica</li>
-            <li>Red Dead Redemption 2</li>
-            <li>God of War</li>
-            <li>House flipper</li>
-            <li>The forest</li>
-            <li>Among Us</li>
-            <li>The Sims 4</li>
-        </ul>
+       <div class="game-list">
+    <div class="game-card">
+        <div class="box"></div>
+        <h3>Roblox</h3>
+        <p>Sandbox</p>
+    </div>
 
-        <h2> Top Rated Games</h2>
+    <div class="game-card">
+        <div class="box"></div>
+        <h3>Raft</h3>
+        <p>Survival</p>
+    </div>
+
+    <div class="game-card">
+        <h3>Subnautica</h3>
+        <p>Survival</p>
+    </div>
+    </div>
+
+    <div class="top-games">    
+    <h2 class="title"> Top Rated Games</h2>
         <ol>
             <li>Red Dead Redemption 2</li>
             <li>God of War</li>
@@ -33,10 +49,10 @@
             <li>Subnautica</li>
         </ol>
     
-    
-    <a href="https://www.tiktok.com/@game_manager">Follow us on TikTok</a>
+    </div>
 
-    <h2>Tambah Game</h2>
+    <form class="game-form">
+    </form>
     <form>
         <label class="form-label" for="game">Nama Game</label>
         <input class="form-control" type="text" id="game" name="game" placeholder="Masukkan nama game">
@@ -51,6 +67,11 @@
         <textarea class="form-control" id="description" name="description" placeholder="Masukkan deskripsi game"></textarea>
     <button class="submit-button" type="submit">Tambah Game</button>
     </form>
+  
+
+</div>
+    <script src="script.js"></script>
+</div>
 </main>
 </body>
 </html>
